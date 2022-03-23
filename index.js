@@ -106,7 +106,7 @@ startBtn.addEventListener("click", () => {
   renderEnemies(sortEnemies());
 
   setInterval(() => {
-    if (stage < 5) {  
+    if (stage < 20) {  //// CHANGE THIS TO whatever stage you want to end at
       stage = stage + 1;
       stageSpan.innerText = stage;
       renderEnemies(sortEnemies());
