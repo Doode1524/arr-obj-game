@@ -24,3 +24,13 @@
 # TODO
 - backend and high scores
 - SPA# arr-obj-game
+
+# ENTERPRISE
+- backend
+- leaderboard
+- high scores
+- deploy
+- set stages
+
+
+
