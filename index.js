@@ -100,6 +100,7 @@ const checkStage = (element) => {
   } else if (stage <= 15) {
     element.style.height = "20px";
     element.style.width = "20px";
+    element.style.paddingLeft = '4px';
   } else {
     element.style.height = "10px";
     element.style.width = "10px";
