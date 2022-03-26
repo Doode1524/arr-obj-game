@@ -76,7 +76,8 @@ const renderEnemy = (obj) => {
   xpH2.innerText = `${obj.xp}`;
   btn.innerText = "X";
   btn.value = obj.xp;
-
+  checkStage(btn);
+  
   btn.addEventListener("click", (event) => {
     let num = parseInt(event.target.value);
     div.style.visibility = "hidden";
@@ -88,6 +89,23 @@ const renderEnemy = (obj) => {
   div.append(btn);
   enemyContainer.append(div);
 };
+
+const checkStage = (element) => {
+  if (stage <= 5) {
+    element.style.height = "40px";
+    element.style.width = "40px";
+  } else if (stage <= 10) {
+    element.style.height = "30px";
+    element.style.width = "30px";
+  } else if (stage <= 15) {
+    element.style.height = "20px";
+    element.style.width = "20px";
+  } else {
+    element.style.height = "10px";
+    element.style.width = "10px";
+    element.innerText = "";
+  }
+}
 
 const gameOver = () => {
   enemyContainer.innerHTML = "";

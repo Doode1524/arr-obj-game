@@ -31,6 +31,7 @@
 - high scores
 - deploy
 - set stages
+- make boxes get smaller
 
 
 
